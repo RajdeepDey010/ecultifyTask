@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- FontAwesome Link -->
+    <style>
+        /* Custom Styling */
+        .main-section {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .main-section h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .main-section h3 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .main-section button {
+            margin: 10px;
+        }
+
+        .quote-card {
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .quote-card img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .quote-section {
+            padding: 40px 0;
+        }
+
+        .logo-img {
+            width: 28px;
+            height: 39px;
+        }
+
+        .quote-card .content {
+            display: flex;
+            align-items: center;
+        }
+
+        .quote-card .title {
+            font-weight: bold;
+        }
+
+        .quote-card .description {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            padding: 40px 0;
+        }
+
+        .footer a {
+            color: #000;
+        }
+
+        .footer .fa-icon {
+            margin-right: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./asset/Icon.png" alt="Logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+                    <li class="nav-item"><button class="btn btn-dark">Register</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <h1>Title</h1>
+        <h3>Subtitle</h3>
+        <button class="btn btn-outline-secondary">Button</button>
+        <button class="btn btn-dark">Button</button>
+    </section>
+
+    <!-- Quotes Section -->
+    <section class="quote-section container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="quote-card">
+                    <p>"Quote"</p>
+                    <div class="content">
+                        <img src="./asset/Shape.png" alt="Avatar" width="40" height="40">
+                        <div>
+                            <p class="title">Title</p>
+                            <p class="description">Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="quote-card">
+                    <p>"Quote"</p>
+                    <div class="content">
+                        <img src="./asset/Shape.png" alt="Avatar" width="40" height="40">
+                        <div>
+                            <p class="title">Title</p>
+                            <p class="description">Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="quote-card">
+                    <p>"Quote"</p>
+                    <div class="content">
+                        <img src="./asset/Shape.png" alt="Avatar" width="40" height="40">
+                        <div>
+                            <p class="title">Title</p>
+                            <p class="description">Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="quote-card">
+                    <p>"Quote"</p>
+                    <div class="content">
+                        <img src="./asset/Shape.png" alt="Avatar" width="40" height="40">
+                        <div>
+                            <p class="title">Title</p>
+                            <p class="description">Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Body text for whatever you’d like to say. Add main takeaway points, quotes,
+                            anecdotes, or even a very very short story.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Title</h5>
+                        <p class="card-text">Body text for whatever you’d like to say. Add main takeaway points, quotes,
+                            anecdotes, or even a very very short story. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo">
+                        <!-- You can replace this with an actual image if you want -->
+                        <img src="./asset/Icon.png" alt="Logo" style="height: 50px;">
+                    </div>
+        
+                    <!-- Social Media Icons -->
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Use cases</h6>
+                    <a href="#"><i class="fa-icon fas fa-palette"></i> UI Design</a><br>
+                    <a href="#"><i class="fa-icon fas fa-pencil-alt"></i> UX Design</a><br>
+                    <a href="#"><i class="fa-icon fas fa-drafting-compass"></i> Wireframing</a><br>
+                    <a href="#"><i class="fa-icon fas fa-project-diagram"></i> Diagramming</a>
+                </div>
+                <div class="col-md-4">
+                    <h6>Explore</h6>
+                    <a href="#"><i class="fa-icon fas fa-paint-brush"></i> Design</a><br>
+                    <a href="#"><i class="fa-icon fas fa-mobile-alt"></i> Prototyping</a><br>
+                    <a href="#"><i class="fa-icon fas fa-code"></i> Development features</a><br>
+                    <a href="#"><i class="fa-icon fas fa-layer-group"></i> Design systems</a>
+                </div>
+                <div class="col-md-4">
+                    <h6>Resources</h6>
+                    <a href="#"><i class="fa-icon fas fa-blog"></i> Blog</a><br>
+                    <a href="#"><i class="fa-icon fas fa-lightbulb"></i> Best practices</a><br>
+                    <a href="#"><i class="fa-icon fas fa-palette"></i> Colors</a><br>
+                    <a href="#"><i class="fa-icon fas fa-life-ring"></i> Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
